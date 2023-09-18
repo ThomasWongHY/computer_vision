@@ -16,7 +16,7 @@ for bbox, class_id, seg, score in zip(bboxes, classes, segmentation, scores):
     
     cv2.polylines(img, [seg], True, (255, 0, 0), 2)
     
-    cv2.putText(img, str(class_id), (x, y - 10), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 255), 2)
+    cv2.putText(img, str(class_id), (x, y - 10), cv2.FONT_HERSHEY_PLAIN, 5, (0, 0, 255), 5)
     
     
 cv2.imshow("image", img)

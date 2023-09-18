@@ -2,7 +2,7 @@ import cv2
 from ultralytics import YOLO
 import numpy as np
 
-cap = cv2.VideoCapture("dogs.mp4")
+cap = cv2.VideoCapture("/Users/thomas/Downloads/ComputerVision/object_detection/dogs.mp4")
 
 model = YOLO("yolov8m.pt")
 
